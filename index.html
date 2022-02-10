@@ -11,7 +11,7 @@
   <body>
     <header class="header">
       <div class="container header__container"><a class="logo" href="index.html">
-          <svg class="logo__svg">
+          <svg class="logo__icon">
             <use xlink:href="images/dist/sprite.svg#logo"></use>
           </svg></a>
         <nav class="nav">
@@ -62,7 +62,33 @@
       </div>
     </header>
     <main class="content">
-      <div class="container">Тут контент</div>
+      <section class="hero">
+        <div class="container hero__top">
+          <h1 class="hero__title">Interiorix,</h1>
+          <p class="hero__desc">скидки первым клиентам на рассчет стоимости проекта</p>
+        </div>
+        <div class="container hero__container">
+          <picture class="hero__img">
+            <source srcset="images/dist/@2x/hero@2x.jpg 2x, images/dist/@1x/hero.jpg 1x"><img src="images/dist/@1x/hero.jpg" alt="Room">
+          </picture><a class="hero__link link" href="#">Посмотреть проекты
+            <svg class="link__icon">
+              <use xlink:href="images/dist/sprite.svg#arrow-right"></use>
+            </svg></a>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container about__container">
+          <h2 class="about__title">О нас</h2>
+          <div class="about__desc">
+            <h3 class="about__subtitle">Мы занимаемся дизайном для наших заказчиков более 20 лет</h3>
+            <p class="about__text">Используя накопленный опыт,мы мастерски подходим к созданию интерьера для наших заказчиков.Используя зарубежные качественные материалы прямой поставки из разных уголков мира.</p>
+            <p class="about__text">Не только разрабатываем дизайн интерьера,но и продаем качественные товары,которые могут его дополнить.<a class="about__link link" href="#">Товары
+                <svg class="link__icon">
+                  <use xlink:href="images/dist/sprite.svg#arrow-right"></use>
+                </svg></a></p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container">footer</div>

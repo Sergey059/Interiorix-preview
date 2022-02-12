@@ -78,14 +78,36 @@
       </section>
       <section class="about">
         <div class="container about__container">
-          <h2 class="about__title">О нас</h2>
-          <div class="about__desc">
+          <header class="about__header">
+            <h2 class="about__title">О нас</h2>
+          </header>
+          <div class="about__content">
             <h3 class="about__subtitle">Мы занимаемся дизайном для наших заказчиков более 20 лет</h3>
-            <p class="about__text">Используя накопленный опыт,мы мастерски подходим к созданию интерьера для наших заказчиков.Используя зарубежные качественные материалы прямой поставки из разных уголков мира.</p>
-            <p class="about__text">Не только разрабатываем дизайн интерьера,но и продаем качественные товары,которые могут его дополнить.<a class="about__link link" href="#">Товары
-                <svg class="link__icon">
-                  <use xlink:href="images/dist/sprite.svg#arrow-right"></use>
-                </svg></a></p>
+            <div class="about__desc">
+              <div class="about__row about__row_dn">
+                <div class="about__col">
+                  <p class="about__text">Используя накопленный опыт,мы мастерски подходим к созданию интерьера для наших заказчиков.Используя зарубежные качественные материалы прямой поставки из разных уголков мира.</p>
+                </div>
+                <div class="about__col">
+                  <p class="about__text">Не только разрабатываем дизайн интерьера,но и продаем качественные товары,которые могут его дополнить.</p><a class="about__link link" href="#">Товары
+                    <svg class="link__icon">
+                      <use xlink:href="images/dist/sprite.svg#arrow-right"></use>
+                    </svg></a>
+                </div>
+              </div>
+              <div class="about__row">
+                <div class="about__col">
+                  <picture class="about__img">
+                    <source srcset="images/dist/@2x/kitchen@2x.jpg 2x, images/dist/@1x/kitchen.jpg 1x"><img src="images/dist/@1x/kitchen.jpg" alt="kitchen">
+                  </picture>
+                </div>
+                <div class="about__col">
+                  <picture class="about__img">
+                    <source srcset="images/dist/@2x/lamp@2x.png 2x, images/dist/@1x/lamp.png 1x"><img src="images/dist/@1x/lamp.png" alt="lamp">
+                  </picture>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

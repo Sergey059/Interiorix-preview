@@ -59,8 +59,176 @@
         <div class="hamburger"><span class="hamburger__line"></span></div>
       </div>
     </header>
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__list"><a class="breadcrumbs__link" href="index.html">Главная</a><span class="breadcrumbs__link breadcrumbs__link_active">Шоурум</span></div>
+      </div>
+    </div>
     <main class="content"> 
-      <div class="container">Шоурум</div>
+      <div class="showroom">
+        <div class="container">
+          <header class="showroom__header">
+            <h1 class="title showroom__title">Товары</h1>
+            <h2 class="showroom__subtitle">2021-2022 новая коллекция диванов</h2>
+          </header>
+          <div class="showroom__content">
+            <div class="showroom__filter">
+              <div class="showroom__filter-left dropdown">
+                <button class="showroom__filter-btn dropdown__btn">Фильтр
+                  <svg class="showroom__filter-icon">
+                    <use xlink:href="images/dist/sprite.svg#arrow-down-1"></use>
+                  </svg>
+                </button>
+                <form class="showroom__filter-list dropdown__list">
+                  <fieldset class="showroom__filter-item">
+                    <legend class="showroom__filter-title">Тип товара:</legend>
+                    <input class="showroom__filter-checkbox" id="cushioned-furniture" type="checkbox" name="cushioned-furniture" checked>
+                    <label class="showroom__filter-subtitle" for="cushioned-furniture">Мягкая мебель</label>
+                    <input class="showroom__filter-checkbox" id="sliding-wardrobes" type="checkbox" name="sliding-wardrobes" checked>
+                    <label class="showroom__filter-subtitle" for="sliding-wardrobes">Шкафы-купе</label>
+                    <input class="showroom__filter-checkbox" id="bedroom-furniture" type="checkbox" name="bedroom-furniture" checked>
+                    <label class="showroom__filter-subtitle" for="bedroom-furniture">Мебель для спальни</label>
+                    <input class="showroom__filter-checkbox" id="living-room-furniture" type="checkbox" name="living-room-furniture" checked>
+                    <label class="showroom__filter-subtitle" for="living-room-furniture">Мебель для гостиной</label>
+                    <input class="showroom__filter-checkbox" id="kitchen-furniture" type="checkbox" name="kitchen-furniture" checked>
+                    <label class="showroom__filter-subtitle" for="kitchen-furniture">Кухонная мебель</label>
+                    <input class="showroom__filter-checkbox" id="office-furniture" type="checkbox" name="office-furniture" checked>
+                    <label class="showroom__filter-subtitle" for="office-furniture">Офисная мебель</label>
+                  </fieldset>
+                  <fieldset class="showroom__filter-item">
+                    <legend class="showroom__filter-title">Дизайнер:</legend>
+                    <input class="showroom__filter-checkbox" id="karim-rashid" type="checkbox" name="karim-rashid" checked>
+                    <label class="showroom__filter-subtitle" for="karim-rashid">Карим Рашид</label>
+                    <input class="showroom__filter-checkbox" id="akille-kastil" type="checkbox" name="akille-kastil" checked>
+                    <label class="showroom__filter-subtitle" for="akille-kastil">Акилле Кастильони</label>
+                    <input class="showroom__filter-checkbox" id="filipp-stark" type="checkbox" name="filipp-stark" checked>
+                    <label class="showroom__filter-subtitle" for="filipp-stark">Филипп Старк</label>
+                    <input class="showroom__filter-checkbox" id="hella-jongerius" type="checkbox" name="hella-jongerius" checked>
+                    <label class="showroom__filter-subtitle" for="hella-jongerius">Хелла Йонгериус</label>
+                  </fieldset>
+                  <fieldset class="showroom__filter-item showroom__filter-item_fx">
+                    <legend class="showroom__filter-title">Страна:</legend>
+                    <input class="showroom__filter-checkbox" id="jpn" type="checkbox" name="jpn" checked>
+                    <label class="showroom__filter-subtitle showroom__filter-subtitle_col" for="jpn">Япония</label>
+                    <input class="showroom__filter-checkbox" id="ita" type="checkbox" name="ita" checked>
+                    <label class="showroom__filter-subtitle showroom__filter-subtitle_col" for="ita">Италия</label>
+                    <input class="showroom__filter-checkbox" id="swe" type="checkbox" name="swe" checked>
+                    <label class="showroom__filter-subtitle showroom__filter-subtitle_col" for="swe">Швеция</label>
+                    <input class="showroom__filter-checkbox" id="deu" type="checkbox" name="deu" checked>
+                    <label class="showroom__filter-subtitle showroom__filter-subtitle_col" for="deu">Германия</label>
+                    <input class="showroom__filter-checkbox" id="fra" type="checkbox" name="fra" checked>
+                    <label class="showroom__filter-subtitle showroom__filter-subtitle_col" for="fra">Франция</label>
+                    <input class="showroom__filter-checkbox" id="can" type="checkbox" name="can" checked>
+                    <label class="showroom__filter-subtitle showroom__filter-subtitle_col" for="can">Канада</label>
+                  </fieldset>
+                  <fieldset class="showroom__filter-item showroom__filter-item_fx">
+                    <legend class="showroom__filter-title">Цвет:</legend>
+                    <input class="showroom__filter-checkbox" id="maple" type="checkbox" name="maple" checked>
+                    <label class="showroom__filter-subtitle showroom__filter-subtitle_col" for="maple">Клен</label>
+                    <input class="showroom__filter-checkbox" id="nut" type="checkbox" name="nut" checked>
+                    <label class="showroom__filter-subtitle showroom__filter-subtitle_col" for="nut">Орех</label>
+                    <input class="showroom__filter-checkbox" id="oak" type="checkbox" name="oak" checked>
+                    <label class="showroom__filter-subtitle showroom__filter-subtitle_col" for="oak">Дуб</label>
+                    <input class="showroom__filter-checkbox" id="pear" type="checkbox" name="pear" checked>
+                    <label class="showroom__filter-subtitle showroom__filter-subtitle_col" for="pear">Груша</label>
+                    <input class="showroom__filter-checkbox" id="cherry" type="checkbox" name="cherry" checked>
+                    <label class="showroom__filter-subtitle showroom__filter-subtitle_col" for="cherry">Вишня</label>
+                  </fieldset>
+                  <div class="showroom__filter-btns">
+                    <button class="showroom__filter-resset">Сбросить</button>
+                    <button class="showroom__filter-apply">Применить</button>
+                  </div>
+                </form>
+              </div>
+              <div class="showroom__filter-right">21 товар</div>
+            </div>
+            <div class="showroom__cards">
+              <div class="showroom__cards-body"><a class="showroom__card" href="card.html"> 
+                  <picture class="showroom__card-img">
+                    <source srcset="images/dist/@2x/ario@2x.jpg 2x, images/dist/@1x/ario.jpg 1x"><img src="images/dist/@1x/ario.jpg" alt="Диван “ARIO”">
+                  </picture>
+                  <div class="showroom__card-body">
+                    <h3 class="showroom__card-title">Диван “ARIO”</h3>
+                    <p class="showroom__card-country">Япония</p>
+                    <p class="showroom__card-price">1 200 000 руб.</p>
+                  </div></a><a class="showroom__card" href="card.html"> 
+                  <picture class="showroom__card-img">
+                    <source srcset="images/dist/@2x/kents@2x.jpg 2x, images/dist/@1x/kents.jpg 1x"><img src="images/dist/@1x/kents.jpg" alt="Диван “Kents”">
+                  </picture>
+                  <div class="showroom__card-body">
+                    <h3 class="showroom__card-title">Диван “Kents”</h3>
+                    <p class="showroom__card-country">Италия</p>
+                    <p class="showroom__card-price">920 000 руб.</p>
+                  </div></a><a class="showroom__card" href="card.html"> 
+                  <picture class="showroom__card-img">
+                    <source srcset="images/dist/@2x/domino@2x.jpg 2x, images/dist/@1x/domino.jpg 1x"><img src="images/dist/@1x/domino.jpg" alt="Диван “DOMINO”">
+                  </picture>
+                  <div class="showroom__card-body">
+                    <h3 class="showroom__card-title">Диван “DOMINO”</h3>
+                    <p class="showroom__card-country">Испания</p>
+                    <p class="showroom__card-price">2 100 000 руб.</p>
+                  </div></a><a class="showroom__card" href="card.html"> 
+                  <picture class="showroom__card-img">
+                    <source srcset="images/dist/@2x/scert@2x.jpg 2x, images/dist/@1x/scert.jpg 1x"><img src="images/dist/@1x/scert.jpg" alt="Диван “Scers”">
+                  </picture>
+                  <div class="showroom__card-body">
+                    <h3 class="showroom__card-title">Диван “Scers”</h3>
+                    <p class="showroom__card-country">Италия</p>
+                    <p class="showroom__card-price">560 000 руб.</p>
+                  </div></a>
+              </div>
+              <button class="showroom__btn">Показать больше</button>
+            </div>
+            <div class="slider showroom__slider">
+              <div class="slider__wrapper showroom__slider-wrapper">
+                <div class="slider__items showroom__slider-items"><a class="slider__item showroom__slider-card" href="card.html"> 
+                    <div class="showroom__slider-body">
+                      <div class="showroom__slider-top">
+                        <div class="showroom__slider-left">
+                          <h3 class="showroom__slider-title">Диван “PABLO 1”</h3>
+                          <p class="showroom__slider-country">Италия</p>
+                        </div>
+                        <p class="showroom__slider-price">700 000 руб.</p>
+                      </div>
+                      <p class="showroom__slider-desc">1 Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Проектах переписывается сих он выйти курсивных, вопрос взобравшись решила семь если безорфографичный толку скатился пунктуация.</p>
+                    </div>
+                    <picture class="showroom__slider-img">
+                      <source srcset="images/dist/@2x/pablo@2x.jpg 2x, images/dist/@1x/pablo.jpg 1x"><img src="images/dist/@1x/pablo.jpg" alt="Диван “PABLO 1”">
+                    </picture></a><a class="slider__item showroom__slider-card" href="card.html"> 
+                    <div class="showroom__slider-body">
+                      <div class="showroom__slider-top">
+                        <div class="showroom__slider-left">
+                          <h3 class="showroom__slider-title">Диван “PABLO 2”</h3>
+                          <p class="showroom__slider-country">Италия</p>
+                        </div>
+                        <p class="showroom__slider-price">1 200 000 руб.</p>
+                      </div>
+                      <p class="showroom__slider-desc">2 Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Проектах переписывается сих он выйти курсивных, вопрос взобравшись решила семь если безорфографичный толку скатился пунктуация.</p>
+                    </div>
+                    <picture class="showroom__slider-img">
+                      <source srcset="images/dist/@2x/pablo@2x.jpg 2x, images/dist/@1x/pablo.jpg 1x"><img src="images/dist/@1x/pablo.jpg" alt="Диван “PABLO 2”">
+                    </picture></a><a class="slider__item showroom__slider-card" href="card.html"> 
+                    <div class="showroom__slider-body">
+                      <div class="showroom__slider-top">
+                        <div class="showroom__slider-left">
+                          <h3 class="showroom__slider-title">Диван “PABLO 3”</h3>
+                          <p class="showroom__slider-country">Италия</p>
+                        </div>
+                        <p class="showroom__slider-price">950 000 руб.</p>
+                      </div>
+                      <p class="showroom__slider-desc">3 Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Проектах переписывается сих он выйти курсивных, вопрос взобравшись решила семь если безорфографичный толку скатился пунктуация.</p>
+                    </div>
+                    <picture class="showroom__slider-img">
+                      <source srcset="images/dist/@2x/pablo@2x.jpg 2x, images/dist/@1x/pablo.jpg 1x"><img src="images/dist/@1x/pablo.jpg" alt="Диван “PABLO 3”">
+                    </picture></a>
+                </div>
+              </div>
+              <button class="slider__control showroom__slider-control" data-slide="prev"></button>
+              <button class="slider__control showroom__slider-control" data-slide="next"></button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="container footer__container">

@@ -15,19 +15,13 @@
             <use xlink:href="images/dist/sprite.svg#logo"></use>
           </svg></a>
         <nav class="nav">
-          <div class="nav__list"><a class="nav__link" href="about.html">о компании
-              <svg class="nav__icon">
-                <use xlink:href="images/dist/sprite.svg#arrow-down"></use>
-              </svg></a><a class="nav__link" href="portfolio.html">портфолио работ
+          <div class="nav__list"><a class="nav__link" href="portfolio.html">проекты
               <svg class="nav__icon">
                 <use xlink:href="images/dist/sprite.svg#arrow-down"></use>
               </svg></a><a class="nav__link" href="reviews.html">отзывы
               <svg class="nav__icon">
                 <use xlink:href="images/dist/sprite.svg#arrow-down"></use>
               </svg></a><a class="nav__link" href="showroom.html">шоурум
-              <svg class="nav__icon">
-                <use xlink:href="images/dist/sprite.svg#arrow-down"></use>
-              </svg></a><a class="nav__link" href="team.html">команда
               <svg class="nav__icon">
                 <use xlink:href="images/dist/sprite.svg#arrow-down"></use>
               </svg></a><span class="nav__link active">контакты
@@ -59,8 +53,51 @@
         <div class="hamburger"><span class="hamburger__line"></span></div>
       </div>
     </header>
-    <main class="content"> 
-      <div class="container">Контакты</div>
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__list"><a class="breadcrumbs__link" href="index.html">Главная</a><span class="breadcrumbs__link breadcrumbs__link_active">Контакты</span></div>
+      </div>
+    </div>
+    <main class="content">
+      <div class="contacts">
+        <div class="container">
+          <div class="contacts__col">
+            <h1 class="title contacts__title">Наши контакты</h1><a class="contacts__mail" href="mailto:interiorix@studio.es">interiorix@studio.es</a>
+            <div class="social"><a class="social__link" href="https://www.instagram.com/">
+                <svg class="social__icon">
+                  <use xlink:href="images/dist/sprite.svg#instagram"></use>
+                </svg></a><a class="social__link" href="https://www.facebook.com/">
+                <svg class="social__icon">
+                  <use xlink:href="images/dist/sprite.svg#fb"></use>
+                </svg></a><a class="social__link" href="https://twitter.com/">
+                <svg class="social__icon">
+                  <use xlink:href="images/dist/sprite.svg#twitter"></use>
+                </svg></a>
+            </div>
+            <p class="contacts__adress">Москва, ул. Стромынки 98, строение 9</p>
+            <p class="contacts__days">пн / вт / ср / чт / пт / сб</p>
+            <p class="contacts__mode">с 10:00 до 20:00</p>
+          </div>
+          <form class="contacts__col" action="#" method="post">
+            <h2 class="title contacts__title contacts__title_mb">Остались вопросы?</h2>
+            <div class="form__item">
+              <input class="form__input" id="name" type="text" name="name" placeholder="Имя">
+            </div>
+            <div class="form__item">
+              <input class="form__input" id="mail" type="email" name="mail" placeholder="Эл.почта">
+            </div>
+            <div class="form__item">
+              <textarea class="form__input form__input_textarea" id="message" name="message" placeholder="Сообщение"></textarea>
+            </div>
+            <div class="form__item">
+              <label class="form__item-title">
+                <input class="form__checkbox" id="checkbox-1" type="checkbox" required><span class="form__text">Я принимаю условия пользовательского соглашения и согласен на обработку персональных данных</span>
+              </label>
+              <button class="btn form__btn">Отпаравить</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="container footer__container">
@@ -75,7 +112,7 @@
         <div class="footer__company">
           <div class="footer__col">
             <p class="footer__title">Агенство</p>
-            <div class="footer__list"><a class="footer__link" href="#">Коммерческий дизайн</a><a class="footer__link" href="#">Дизайн продукта</a><a class="footer__link" href="#">Дизайн интерьера</a><a class="footer__link" href="#">Партнерская программа</a></div>
+            <div class="footer__list"><a class="footer__link" href="portfolio.html">Коммерческий дизайн</a><a class="footer__link" href="portfolio.html">Дизайн продукта</a><a class="footer__link" href="portfolio.html">Дизайн интерьера</a><a class="footer__link" href="portfolio.html">Партнерская программа</a></div>
           </div>
           <div class="footer__col">
             <p class="footer__title">Поддержка</p>

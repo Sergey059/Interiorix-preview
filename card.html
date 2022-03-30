@@ -53,8 +53,36 @@
         <div class="hamburger"><span class="hamburger__line"></span></div>
       </div>
     </header>
-    <main class="content"> 
-      <div class="container">Карточка товара</div>
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__list"><a class="breadcrumbs__link" href="index.html">Главная</a><a class="breadcrumbs__link" href="showroom.html">Шоурум</a><span class="breadcrumbs__link breadcrumbs__link_active">Карточка товара</span></div>
+      </div>
+    </div>
+    <main class="content">
+      <div class="card">
+        <div class="container">
+          <div class="card__col">
+            <div class="slider card__slider">
+              <div class="slider__wrapper card__slider-wrapper">
+                <div class="slider__items card__slider-items">
+                  <picture class="slider__item card__slider-img">
+                    <source srcset="images/dist/@2x/sofa-1@2x.jpg 2x, images/dist/@1x/sofa-1.jpg 1x"><img src="images/dist/@1x/sofa-1.jpg" alt="sofa-1">
+                  </picture>
+                  <picture class="slider__item card__slider-img">
+                    <source srcset="images/dist/@2x/sofa-2@2x.jpg 2x, images/dist/@1x/sofa-2.jpg 1x"><img src="images/dist/@1x/sofa-2.jpg" alt="sofa-2">
+                  </picture>
+                  <picture class="slider__item card__slider-img">
+                    <source srcset="images/dist/@2x/sofa-3@2x.jpg 2x, images/dist/@1x/sofa-3.jpg 1x"><img src="images/dist/@1x/sofa-3.jpg" alt="sofa-3">
+                  </picture>
+                </div>
+              </div>
+              <div class="slider__indicators card__slider-indicators"><img class="slider__indicator card__slider-indicator" data-slide-to="0" src="images/dist/@1x/sofa-1.jpg" alt="sofa-1"><img class="slider__indicator card__slider-indicator" data-slide-to="1" src="images/dist/@1x/sofa-2.jpg" alt="sofa-2"><img class="slider__indicator card__slider-indicator" data-slide-to="2" src="images/dist/@1x/sofa-3.jpg" alt="sofa-3">
+              </div>
+            </div>
+          </div>
+          <div class="card__col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, id commodi omnis, eveniet tenetur dolorem ab, maiores recusandae asperiores quae a ratione voluptatem delectus perferendis saepe molestias qui vel error.</div>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="container footer__container">
